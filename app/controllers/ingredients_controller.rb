@@ -1,6 +1,5 @@
-class CoursesController < ApplicationController
+class IngredientsController < ApplicationController
   def index
-    @courses = Course.all
   end
 
   def show

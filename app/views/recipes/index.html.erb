@@ -1,2 +1,18 @@
 <h1>Recipes#index</h1>
-<p>Find me in app/views/recipes/index.html.erb</p>
+
+<table>
+  <tr>
+    <td>Name</td>
+    <td>Instructions</td>
+    <td>Servings</td>
+  </tr>
+
+  <% @recipes.each do |recipe| %>
+    <tr>
+      <td><%= recipe.name %></td>
+      <td><%= recipe.instructions %></td>
+      <td><%= recipe.servings %></td>
+    </tr>
+  <%end%>
+
+</table>

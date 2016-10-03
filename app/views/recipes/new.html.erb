@@ -20,6 +20,10 @@
     <%= f.select :course_ids, Course.all.collect {|x| [x.name, x.id]}, {}, :multiple => true %>
   </div>
 
+  <div class="field">
+    <%= f.label :ingredient_id %> <br>
+    <%= f.collection_check_boxes :ingredient_ids, @ingredients, :id, :name %>
+  </div>
 
   <p>
     <%= f.submit %>

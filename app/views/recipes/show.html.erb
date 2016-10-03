@@ -14,3 +14,10 @@
   <strong>Servings:</strong>
   <%= @recipe.servings %>
 </p>
+
+<h2>Ingredients</h2>
+<ul>
+  <% @recipe.ingredients.each do |ingredient| %>
+    <li><%=ingredient.name%></li>
+  <%end%>
+</ul>
